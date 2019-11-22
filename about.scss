@@ -15,6 +15,10 @@ body {
 a:hover {
     text-decoration: none;
 }
+
+h1, h2 {
+    font-size: 4vw;
+}
 h1 {
     color: $color1;
     transform: rotate(4deg);
@@ -38,6 +42,9 @@ h2 {
     height: 100%;
 
 
+
+
+
     &-section {
         flex:0 0 100%;
         width: 75vw;
@@ -54,11 +61,10 @@ h2 {
             color: white;
             font-family: 'Share Tech Mono', monospace;
             font-size: 1.6vh;
-            // min-width: 300px;
-            // min-height: 550px;
+
 
                 &-photo {
-                    width: 100%;
+                    width: 90%;
                     transform: rotate(-3deg);
                 }
             }
@@ -99,6 +105,8 @@ h2 {
         padding:0;
         text-align: center;
         vertical-align: auto;
+        // min-width: 250px;
+        max-width: 300px;
 
     }
 

@@ -25,6 +25,10 @@ a:hover {
   text-decoration: none;
 }
 
+h1, h2 {
+  font-size: 4vw;
+}
+
 h1 {
   color: #eb7e19;
   -webkit-transform: rotate(4deg);
@@ -81,7 +85,7 @@ h2 {
 }
 
 .about-container-main-section-textblock-photo {
-  width: 100%;
+  width: 90%;
   -webkit-transform: rotate(-3deg);
           transform: rotate(-3deg);
 }
@@ -124,6 +128,7 @@ h2 {
   padding: 0;
   text-align: center;
   vertical-align: auto;
+  max-width: 300px;
 }
 
 .about-container-side-char {
