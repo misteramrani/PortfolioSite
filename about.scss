@@ -1,0 +1,73 @@
+@import "variables.scss";
+@import "headerfonts.scss";
+
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+    border-radius: 10px;
+    background: url(/img/album2.jpg);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    height: 100vh;
+    overflow: scroll hidden;
+}
+.about-container {
+
+    display: flex;
+    
+
+&-main {
+    display: flex;
+    // overflow-x: none;
+    // overflow-y: hidden;
+    height: 100%;
+    // transform: rotate(90deg);
+
+    &-section {
+        flex:0 0 100%;
+    }
+}
+
+    &-side {
+        background-color: $color2;
+        color:$color1;
+        // overflow: hidden;
+        flex:0 0 230px;
+        height: 100%;
+        margin-left:50px;
+        display: flex;
+        flex-wrap: wrap;
+        padding:0;
+        text-align: center;
+        vertical-align: auto;
+
+    }
+
+    &-side {
+        &-char {
+            @extend .headerfont;
+            flex: 1;
+            font-size: 8rem;
+        }
+
+        
+       
+            
+    }
+        @media only screen and (max-width:768px)
+        {
+            &-side {
+                margin-left:0;
+                margin-top:50px;
+                flex-wrap: nowrap;
+                overflow: hidden;
+                height: 14rem;
+                width: 100%;
+            }
+            display: block;
+        }
+    
+}
+
+  
