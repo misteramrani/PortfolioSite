@@ -21,6 +21,25 @@ body {
   overflow: scroll hidden;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  color: #eb7e19;
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+}
+
+h2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #eb7e19;
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+}
+
 .about-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,16 +57,65 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
+  width: 75vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-container-main-section-textblock {
+  background-color: black;
+  width: 50vw;
+  height: 70vh;
+  position: relative;
+  color: white;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.6vh;
+}
+
+.about-container-main-section-textblock-photo {
+  width: 100%;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+.about-container-main-section-textblock:hover {
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  -webkit-transition-duration: 10ms;
+          transition-duration: 10ms;
+}
+
+.about-container-main-section-textblock:hover h2 {
+  color: black;
+}
+
+.about-container-main-section-textblock::before {
+  content: "";
+  background-color: #eb7e19;
+  position: absolute;
+  width: 50vw;
+  height: 70vh;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  z-index: -2;
 }
 
 .about-container-side {
   background-color: black;
   color: #eb7e19;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 230px;
-          flex: 0 0 230px;
+      -ms-flex: 0 0 20vw;
+          flex: 0 0 20vw;
   height: 100%;
-  margin-left: 50px;
+  margin-left: 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,20 +131,5 @@ body {
       -ms-flex: 1;
           flex: 1;
   font-size: 8rem;
-}
-
-@media only screen and (max-width: 768px) {
-  .about-container {
-    display: block;
-  }
-  .about-container-side {
-    margin-left: 0;
-    margin-top: 50px;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    overflow: hidden;
-    height: 14rem;
-    width: 100%;
-  }
 }
 /*# sourceMappingURL=about.css.map */
