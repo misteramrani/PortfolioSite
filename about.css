@@ -1,4 +1,5 @@
-.headerfont, .about-container-side-char {
+.headerfont, .about-container-side-char,
+.about-navbar-navbaritems-side-char {
   height: 10rem;
   font-size: 14rem;
   line-height: 8rem;
@@ -21,11 +22,14 @@ body {
   overflow: scroll hidden;
 }
 
-a:hover {
+a:hover,
+a {
   text-decoration: none;
+  color: black;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 4vw;
 }
 
@@ -44,20 +48,40 @@ h2 {
           transform: rotate(4deg);
 }
 
-.about-container {
+.about-navbar {
+  background-color: #eb7e19;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+.about-navbar-navbaritems {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 26px;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 1.1rem;
+}
+
+.about-container,
+.about-navbar-navbaritems {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.about-container-main {
+.about-container-main,
+.about-navbar-navbaritems-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100%;
 }
 
-.about-container-main-section {
+.about-container-main-section,
+.about-navbar-navbaritems-main-section {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
@@ -74,45 +98,57 @@ h2 {
           align-items: center;
 }
 
-.about-container-main-section-textblock {
+.about-container-main-section-textblock,
+.about-navbar-navbaritems-main-section-textblock {
   background-color: black;
   width: 50vw;
   height: 70vh;
   position: relative;
   color: white;
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 1.6vh;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 1rem;
 }
 
-.about-container-main-section-textblock-photo {
+.about-container-main-section-textblock-text,
+.about-navbar-navbaritems-main-section-textblock-text {
+  margin-bottom: 5rem;
+}
+
+.about-container-main-section-textblock-photo,
+.about-navbar-navbaritems-main-section-textblock-photo {
   width: 90%;
   -webkit-transform: rotate(-3deg);
           transform: rotate(-3deg);
 }
 
-.about-container-main-section-textblock:hover {
+.about-container-main-section-textblock:hover,
+.about-navbar-navbaritems-main-section-textblock:hover {
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
   -webkit-transition-duration: 10ms;
           transition-duration: 10ms;
 }
 
-.about-container-main-section-textblock:hover h2 {
+.about-container-main-section-textblock:hover h2,
+.about-navbar-navbaritems-main-section-textblock:hover h2 {
   color: black;
 }
 
-.about-container-main-section-textblock::before {
+.about-container-main-section-textblock::before,
+.about-navbar-navbaritems-main-section-textblock::before {
   content: "";
   background-color: #eb7e19;
   position: absolute;
   width: 50vw;
-  height: 70vh;
+  min-height: 70vh;
+  height: inherit;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
   z-index: -2;
 }
 
-.about-container-side {
+.about-container-side,
+.about-navbar-navbaritems-side {
   background-color: black;
   color: #eb7e19;
   -webkit-box-flex: 0;
@@ -129,9 +165,11 @@ h2 {
   text-align: center;
   vertical-align: auto;
   max-width: 300px;
+  z-index: 4;
 }
 
-.about-container-side-char {
+.about-container-side-char,
+.about-navbar-navbaritems-side-char {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
