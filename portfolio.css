@@ -1,0 +1,155 @@
+.headerfont, .portfolio-container-side-char {
+  height: 10rem;
+  font-size: 14rem;
+  line-height: 8rem;
+  padding: 0;
+  min-width: 7rem;
+  font-family: 'Share Tech Mono', monospace;
+  text-decoration: none;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  border-radius: 10px;
+  background: url(/img/album2.jpg);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+a:hover,
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1,
+h2 {
+  font-size: 4vw;
+}
+
+h1 {
+  color: #eb7e19;
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+}
+
+h2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #eb7e19;
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+}
+
+.portfolio-navbar {
+  background-color: #eb7e19;
+  height: 50px;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 2;
+}
+
+.portfolio-navbar-navbaritems {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 26px;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio-container-main-section,
+.portfolio-navbar-navbaritems-main-section {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  width: 75vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio-container-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  color: #eb7e19;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20vw;
+          flex: 0 0 20vw;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  vertical-align: auto;
+  margin-left: 0;
+  margin-top: 10vh;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: hidden;
+  height: 20vh;
+  width: 100vw;
+}
+
+.portfolio-container-side-char {
+  font-size: 8rem;
+}
+
+.portfolio-container-main-section {
+  width: 100vw;
+  height: 300px;
+  background-size: cover;
+  font-size: 2rem;
+  position: relative;
+  color: #eb7e19;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 5rem;
+}
+
+.portfolio-container-main-section > * {
+  position: absolute;
+  bottom: -50px;
+  right: 10px;
+}
+
+.portfolio-container-main-section::after {
+  content: "";
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.portfolio-container-main-section-even {
+  margin-top: 100px;
+  width: 100vw;
+  height: 300px;
+}
+
+.titleheader1::after {
+  background-image: url(/img/web.jpg);
+  margin-top: 20px;
+}
+
+.titleheader2::after {
+  background-image: url(/img/ph.jpg);
+}
+
+.titleheader3::after {
+  background-image: url(/img/gd.jpg);
+}
+/*# sourceMappingURL=portfolio.css.map */

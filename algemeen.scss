@@ -1,0 +1,31 @@
+
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  border-radius: 10px;
+  background: url(/img/album2.jpg);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+
+a:hover,
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1,
+h2 {
+  font-size: 4vw;
+}
+h1 {
+  color: $color1;
+  transform: rotate(4deg);
+}
+
+h2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: $color1;
+  transform: rotate(4deg);
+}

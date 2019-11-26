@@ -48,6 +48,11 @@ h2 {
           transform: rotate(4deg);
 }
 
+body {
+  height: 100vh;
+  overflow: scroll hidden;
+}
+
 .about-navbar {
   background-color: #eb7e19;
   height: 50px;
